@@ -30,6 +30,7 @@ spec:
     }
   }
 
+  stages {
     stage('Build with Kaniko') {
       environment {
         PATH = "/busybox:/kaniko:$PATH"
