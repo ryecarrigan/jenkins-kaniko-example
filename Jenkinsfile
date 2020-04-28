@@ -30,13 +30,6 @@ spec:
     }
   }
 
-  stages {
-    stage('Prepare Dockerfile') {
-      steps {
-        git 'https://github.com/ryecarrigan/jenkins-kaniko-example.git'
-      }
-    }
-
     stage('Build with Kaniko') {
       environment {
         PATH = "/busybox:/kaniko:$PATH"
