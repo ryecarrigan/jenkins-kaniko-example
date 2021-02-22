@@ -7,7 +7,7 @@ RUN echo "print_me value: $PRINT_ME" \
   && npm config set strict-ssl false \
   ;
 
-WORKDIR /app
+WORKDIR /opt/app-root
 COPY package*.json ./
 COPY app.js ./
 RUN npm install
