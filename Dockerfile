@@ -8,7 +8,8 @@ RUN echo "print_me value: $PRINT_ME" \
   ;
 
 WORKDIR /opt/app-root
-COPY . .
+COPY package*.json ./
+COPY app.js ./
 RUN npm install
 
 EXPOSE 3000
