@@ -1,0 +1,9 @@
+{
+  "description": "Sample app",
+  "license": "MIT",
+  "repository": {},
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.20.0"
+  }
+}
