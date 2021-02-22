@@ -1,7 +1,6 @@
 pipeline {
   agent {
     kubernetes {
-      label 'jenkins-kaniko-demo'
       yaml """
 kind: Pod
 metadata:
@@ -9,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: kaniko
-    image: gcr.io/kaniko-project/executor:debug
+    image: gcr.io/kaniko-project/executor:v1.5.0-debug
     imagePullPolicy: Always
     command:
     - /busybox/cat
